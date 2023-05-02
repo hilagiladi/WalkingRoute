@@ -9,6 +9,9 @@ import org.jsoup.nodes.Document;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
 
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -22,9 +25,24 @@ public class Main {
         GeoApiContext context = new GeoApiContext.Builder()
                 .apiKey(apiKey)
                 .build();
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Enter origin:");
+//        String origin = scanner.nextLine();
+//
+//        System.out.println("Enter destination:");
+//        String destination = scanner.nextLine();
+//
+//        scanner.close();
 
-        String origin = "Paris, France";
-        String destination = "Marseille, France";
+        //String origin = "Leshem 48 Even Sapir, Israel";
+        //String destination = "Golomb Jerusalem, Israel";
+
+
+        // Getting origin and destination from user
+        Location location=new Location();
+
+
         String htmlFile = "C:\\Users\\1\\Documents\\Comuter Science\\projects\\WalkingRoute\\src\\main\\java\\org\\googleMaps\\map.html";
 
         // Load the HTML file
@@ -34,8 +52,8 @@ public class Main {
         // Set the origin and destination data attributes in the HTML file
         Elements mapDivs = doc.select("#map");
         Element mapDiv = mapDivs.first();
-        mapDiv.attr("data-origin", origin);
-        mapDiv.attr("data-destination", destination);
+        mapDiv.attr("data-origin", location.getOrigin());
+        mapDiv.attr("data-destination", location.getDestination());
 
         // Write the updated HTML file
         FileWriter writer = new FileWriter(htmlFile);
@@ -57,9 +75,9 @@ public class Main {
             System.out.println("Directions:");
             for (DirectionsRoute route : directionsResult.routes) {
                 for (DirectionsLeg leg : route.legs) {
-                    System.out.println(leg.startAddress + " to " + leg.endAddress + ":");
+                    //System.out.println(leg.startAddress + " to " + leg.endAddress + ":");
                     for (DirectionsStep step : leg.steps) {
-                        System.out.println("- " + step.htmlInstructions);
+                        //System.out.println("- " + step.htmlInstructions);
                     }
                 }
             }
