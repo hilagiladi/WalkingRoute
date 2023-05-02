@@ -1,7 +1,5 @@
 package org.googleMaps;
 
-
-
-public class GoogleMap {
+public class Location {
 
 }
