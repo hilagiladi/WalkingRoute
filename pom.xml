@@ -33,6 +33,7 @@
       <version>2.0.7</version>
     </dependency>
 
+
     <!-- Add Logback implementation and binding -->
     <dependency>
       <groupId>ch.qos.logback</groupId>
