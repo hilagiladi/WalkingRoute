@@ -20,6 +20,8 @@ public class Location {
 //
 //        scanner.close();
 
+
+
     }
 
     public String getOrigin() {

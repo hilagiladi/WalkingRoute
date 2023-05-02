@@ -5,25 +5,19 @@ import com.google.maps.errors.ApiException;
 import com.google.maps.model.*;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;
 
 public class Main {
-//    private static final Logger logger = LoggerFactory.getLogger(Main.class);
-//
-//    public void myMethod() {
-//        logger.debug("This is a debug message");
-//    }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException, ApiException {
         // Set up the API key
         String apiKey = "AIzaSyBUOnqW1b1gyAvpNoYMLetD0emlXvL8d_Y";
         GeoApiContext context = new GeoApiContext.Builder()
