@@ -8,15 +8,17 @@ public class Location {
     private String destination;
 
     public Location() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Enter origin:");
-        this.origin = scanner.nextLine();
-
-        System.out.println("Enter destination:");
-        this.destination = scanner.nextLine();
-
-        scanner.close();
+        this.origin="Leshem 48 Even Sapir, Israel";
+        this.destination="Tel-Aviv, Israel";
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("Enter origin:");
+//        this.origin = scanner.nextLine();
+//
+//        System.out.println("Enter destination:");
+//        this.destination = scanner.nextLine();
+//
+//        scanner.close();
 
     }
 
