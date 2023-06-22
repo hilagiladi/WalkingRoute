@@ -14,5 +14,12 @@ The main goal of this project is to provide a user-friendly interface for planni
 - Customizable route options (e.g., avoid highways, prefer parks)
 - User authentication and personalization (save favorite routes, view past routes)
 
+## Technologies Used
+
+- HTML, CSS, JavaScript: The front-end of the application is built using these web technologies to create a responsive and interactive user interface.
+- Google Maps API: The application leverages the Google Maps API to retrieve map data, calculate walking routes, and display them on the map.
+- Java: The back-end of the application is written in Java, providing the necessary logic and functionality to handle user requests and communicate with the Google Maps API.
+- Maven: The project uses Maven as a build automation tool and dependency management system.
+
 ## Work in Progress
 Please note that this project is currently a work in progress. Some features and functionalities may not be fully implemented or may be subject to changes.
