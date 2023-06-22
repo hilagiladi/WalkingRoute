@@ -19,7 +19,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException, InterruptedException, ApiException {
         // Set up the API key
-        String apiKey = "AIzaSyBUOnqW1b1gyAvpNoYMLetD0emlXvL8d_Y";
+        String apiKey = "KEY";
         GeoApiContext context = new GeoApiContext.Builder()
                 .apiKey(apiKey)
                 .build();
