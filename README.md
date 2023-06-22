@@ -14,5 +14,5 @@ The main goal of this project is to provide a user-friendly interface for planni
 - Customizable route options (e.g., avoid highways, prefer parks)
 - User authentication and personalization (save favorite routes, view past routes)
 
-### Work in Progress
+## Work in Progress
 Please note that this project is currently a work in progress. Some features and functionalities may not be fully implemented or may be subject to changes.
